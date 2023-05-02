@@ -4,7 +4,7 @@ body {
     height: 100vh;
     font-family: sans-serif;
     overflow: hidden;
-    background-color: #16121E
+    background-color: #0E0C14
 }
 
 .topbar {
@@ -46,6 +46,34 @@ header {
   
 .nav .nav-right {
     float: right;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    grid-gap: 5px;
+    height: 100%;
+}
+  
+.main .item {
+    padding: 10px;
+    background: #16121E;
+    color: white;
+    overflow-y: auto;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    height: 100%;
+}
+
+.main .item .values {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.main .item #address {
+    background: #1C1728;
 }
 
 .about-box {
