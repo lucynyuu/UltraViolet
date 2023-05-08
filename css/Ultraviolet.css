@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
     background-color: #0E0C14
 }
@@ -62,18 +62,25 @@ header {
     overflow-y: auto;
 
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 10% 70% 20%;
     grid-gap: 10px;
     height: 100%;
+}
+
+.main .item #hex-box #hex-holder {
+    display: grid;
+    grid-template-columns: 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6%;
 }
 
 .main .item .values {
     display: grid;
     grid-gap: 10px;
+    text-align: center;
 }
 
 .main .item #address {
     background: #1C1728;
+    text-align: center;
 }
 
 .about-box {
